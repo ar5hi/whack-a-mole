@@ -1,4 +1,4 @@
-/* html {
+html {
     font-size: 35px;
     background: #c7dbfb;
 }
@@ -12,8 +12,8 @@ body {
 	width: 306px;
 	height: 306px;
 	display: flex;
-	flex-wrap: wrap;
-	margin-left: 625px;
+	flex-wrap: wrap; 
+	margin: 50px auto 0 auto;
 	margin-top: 50px;
 	  animation-name:rise;
   animation-duration: 4s;
@@ -48,60 +48,5 @@ button{
     background-color: rgb(187, 16, 73);
     border-radius: 10px;
     margin-left: 20px;
-} */
-
-html {
-    font-size: 35px;
-    background: #c7dbfb;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;  /* Horizontally center the grid */
-    align-items: center;  /* Vertically center the grid */
-    height: 100vh;  /* Full viewport height */
-    text-align: center;
-    background: #c7dbfb;
-}
-
-.grid {
-    width: 306px;
-    height: 306px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;  /* Adjust this if you want the grid to be a bit lower */
-    animation-name: rise;
-    animation-duration: 4s;
-}
-
-@keyframes rise {
-    from { background-position-y: 0%; }
-    to { background-position-y: 100%; }
-}
-
-.square {
-    height: 100px;
-    width: 100px;
-    border: solid #c7dbfb 1px;
-    background: url(dirt.png) bottom center no-repeat;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.mole {
-    background: url(mole.png) bottom center no-repeat;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-button {
-    width: 175px;
-    font-size: 25px;
-    height: 50px;
-    color: #fff;
-    background-color: rgb(187, 16, 73);
-    border-radius: 10px;
-    margin-left: 20px;
-}
